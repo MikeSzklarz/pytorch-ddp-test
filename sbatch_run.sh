@@ -6,7 +6,7 @@
 #SBATCH --nodes=1                      # number of nodes, can be changed with -N flag
 #SBATCH --ntasks-per-node=1            # number of tasks per node. We only have 1 gpu per node. Dont change this
 
-#SBATCH --mem=${MEMORY:-65GB}          # memory per node
+#SBATCH --mem=65GB                    # memory per node
 #SBATCH --partition=waccamaw           # partition name
 #SBATCH --time=01:00:00                # time limit hrs:min:sec
 #SBATCH --exclusive                    # exclusive use of node resoureces. Not sure if this works slurm 16.05.9
